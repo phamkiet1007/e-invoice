@@ -2,12 +2,16 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
+    "declaration": true,
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "types": ["node"],
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "target": "es2021",
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "ignoreDeprecations": "6.0"
   },
   "include": ["src/**/*.ts"],
